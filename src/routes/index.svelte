@@ -1,3 +1,8 @@
+<script>
+	import { onDestroy } from 'svelte'
+	onDestroy(() => console.log('should not run on hitting first page request'))
+</script>
+
 <style>
 	h1, figure, p {
 		text-align: center;
